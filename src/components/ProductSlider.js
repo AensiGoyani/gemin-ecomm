@@ -4,11 +4,13 @@ import ProductCard from './ProductCard';
 
 const ProductSlider = ({ products }) => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: products.length > 3,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,

@@ -23,7 +23,7 @@ const LoginPage = () => {
         setError('Login failed: Invalid credentials.');
       }
     } catch (err) {
-      setError('Login failed: ' + (err.message || 'An unexpected error occurred.'));
+      setError('Login failed:Please Try Again ' );
     }
   };
 

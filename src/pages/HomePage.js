@@ -3,6 +3,7 @@ import { getAllProducts } from "../api/fakeStoreApi";
 import ProductSlider from "../components/ProductSlider";
 import HeroSlider from "../components/HeroSlider";
 import TopSellingProducts from "../components/TopSellingProducts";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [selectedCategories, setSelectedCategories] = useState([
@@ -45,18 +46,22 @@ const HomePage = () => {
   const isCategorySelected = (category) =>
     selectedCategories.includes(category);
 
-  if (loading) return <div className="text-center p-10">Loading...</div>;
-  if (error)
-    return <div className="text-center p-10 text-red-500">{error}</div>;
+  
 
   return (
     <div className="container mx-auto px-3  py-1">
       <HeroSlider />
       {Object.keys(productsByCategory).map((category) => (
         <div key={category} className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 mt-3 capitalize">
-            {category}
-          </h2>
+          <div className="flex justify-between items-center mb-4">
+            <h2 className="text-2xl font-normal text-gray-800 mb-4 mt-3 capitalize">
+              {category}
+            </h2>
+            <Link className="capitalize pr-3 text-2xl hover:text-red-500 hover:underline" to={`/category/${category}`}>
+              view all
+            </Link>
+          </div>
+
           <ProductSlider products={productsByCategory[category]} />
         </div>
       ))}

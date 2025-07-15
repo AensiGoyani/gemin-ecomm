@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => {
   return (
       <div className="border rounded-lg p-4 flex flex-col justify-between shadow-lg hover:shadow-xl transition-shadow duration-300">
         <div className="flex justify-end">
-          <button onClick={handleWishlistClick} className="text-red-500 hover:text-red-700">
+          <button onClick={handleWishlistClick} className="text-blue-600 hover:text-blue-700">
             {isInWishlist(product.id) ? (
               <HeartIconSolid className="h-6 w-6 fill-current" />
             ) : (
@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
         </Link>
         <button
           onClick={() => addToCart(product)}
-          className="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors"
+          className="mt-4 w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition-colors"
         >
           Add to Cart
         </button>
