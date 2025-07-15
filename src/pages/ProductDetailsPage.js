@@ -40,7 +40,7 @@ const ProductDetailsPage = () => {
   };
 
   return (
-    <div className="container mx-auto  py-8">
+    <div className="container mx-auto px-3 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           {/* The API only gives one image, so we repeat it to show slider functionality */}

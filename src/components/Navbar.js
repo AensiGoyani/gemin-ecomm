@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto  py-3">
+      <div className="container mx-auto px-3 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl  flex items-center text-gray-800">
             <img src={Logo} className="w-[50px] h-[50px]"/> <p className="pl-2">E-Shop</p>

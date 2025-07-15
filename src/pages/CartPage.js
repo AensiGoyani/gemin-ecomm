@@ -8,7 +8,7 @@ const CartPage = () => {
 
   if (cartItems.length === 0) {
     return (
-      <div className="container mx-auto  py-8 text-center">
+      <div className="container mx-auto px-3  py-8 text-center">
         <h1 className="text-3xl font-bold">Shopping Cart</h1>
         <p className="mt-4">Your cart is currently empty.</p>
         <Link to="/" className="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">

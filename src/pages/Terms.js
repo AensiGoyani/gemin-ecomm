@@ -4,7 +4,7 @@ import Termsimg from "../image/terms.jpg";
 const Terms = () => {
   return (
     <>
-      <div className="container mx-auto  py-8">
+      <div className="container mx-auto px-3 py-8">
         <div>
           <img src={Termsimg} className="w-[1700px] h-[400px]" />
         </div>

@@ -4,7 +4,7 @@ import Contactus from "../image/contact.jpg";
 
 const Contact = () => {
   return (
-   <div className="container mx-auto  py-8">
+   <div className="container mx-auto px-3 py-8">
         <div>
           <img src={Contactus} className="w-[1700px] h-[400px]" />
         </div>

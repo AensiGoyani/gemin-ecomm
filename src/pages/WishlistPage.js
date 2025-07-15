@@ -8,7 +8,7 @@ const WishlistPage = () => {
   const { wishlistItems, removeFromWishlist } = useWishlist();
 
   return (
-    <div className="container mx-auto  py-8">
+    <div className="container mx-auto px-3 py-8">
       <h1 className="text-3xl font-bold text-center mb-8">My Wishlist</h1>
       {wishlistItems.length === 0 ? (
         <div className="text-center">

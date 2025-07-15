@@ -5,7 +5,7 @@ import Policyimg from "../image/policy.jpg";
 const Policy = () => {
   return (
     <>
-     <div className="container mx-auto  py-8">
+     <div className="container mx-auto px-3 py-8">
           <div>
             <img src={Policyimg} className="w-[1700px] h-[400px] " />
           </div>

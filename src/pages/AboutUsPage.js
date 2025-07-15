@@ -4,7 +4,7 @@ import Aboutus from "../image/about.jpg";
 
 const AboutUsPage = () => {
   return (
-    <div className="container mx-auto  py-8">
+    <div className="container mx-auto px-3  py-8">
       <div>
         <img src={Aboutus} className="w-[1700px] h-[400px]" />
       </div>

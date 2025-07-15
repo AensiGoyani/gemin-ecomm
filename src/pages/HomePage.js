@@ -50,7 +50,7 @@ const HomePage = () => {
     return <div className="text-center p-10 text-red-500">{error}</div>;
 
   return (
-    <div className="container mx-auto  py-1">
+    <div className="container mx-auto px-3  py-1">
       <HeroSlider />
       {Object.keys(productsByCategory).map((category) => (
         <div key={category} className="mb-12">
