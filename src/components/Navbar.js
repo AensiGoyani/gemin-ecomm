@@ -40,7 +40,7 @@ const Navbar = () => {
   }, []);
 
   const activeLinkStyle = {
-    color: "#F44336", // blue-500
+    color: "#F44336", // red-500
     fontWeight: "light",
   };
 
@@ -117,13 +117,13 @@ const Navbar = () => {
                 >
                   {user.username}
                 </span>
-                {/* <button
+                <button
                   onClick={handleLogout}
-                  className="text-gray-600 hover:text-blue-500"
+                  className="text-gray-600 hover:text-red-500"
                   title="Logout"
                 >
                   <UserCircleIcon className="h-6 w-6" />
-                </button> */}
+                </button>
               </div>
             ) : (
               <Link
@@ -180,6 +180,15 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               About
+            </NavLink>
+
+             <NavLink
+              to="/contact"
+              style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}
+              className="block py-2 hover:text-red-500"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact
             </NavLink>
           </div>
         )}

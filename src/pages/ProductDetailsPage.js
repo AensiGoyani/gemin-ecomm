@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getProductById } from "../api/fakeStoreApi";
 import Slider from "react-slick";
 import { useCart } from "../context/CartContext";
-import { BsBag, BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
+import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 
 const ProductDetailsPage = () => {
   const { productId } = useParams();
@@ -85,7 +85,7 @@ const ProductDetailsPage = () => {
           </p>
           <button
             onClick={() => addToCart(product)}
-            className="w-full bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors"
+            className=" bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition-colors"
           >
             Add to Cart
           </button>

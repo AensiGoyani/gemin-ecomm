@@ -33,7 +33,9 @@ const CategoryPage = () => {
 
   return (
     <div className="container mx-auto px-3 py-8">
-      <h1 className="text-3xl font-normal text-center mb-6 capitalize">{categoryName}</h1>
+      <h1 className="text-3xl font-normal text-center mb-6 capitalize">
+        {categoryName}
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* {products.map(product => (
           <ProductCard key={product.id} product={product} />
